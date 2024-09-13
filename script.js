@@ -1,11 +1,14 @@
+const string = str => {
+    let result = ''
+    for (let i = 0; i < str.length; i++) {
+        result += `${i}${str[i].toUpperCase()}`
+    }
+    return result;
+}
 
-const String = str => {
-    return [...str].map((char, index) => `${index}${char.toUpperCase()}`).join('')
-};
+const input = prompt("Enter a string:");
 
-const Inputnput = prompt("Enter a string:")
-
-const indexchar = String(input)
-
-document.write(indexchar);
-
+if (input !== null) {
+    const result = string(input)
+    document.write (`<p>${result}</p>`)
+}
