@@ -6,9 +6,8 @@ const string = str => {
     return result;
 }
 
-const input = prompt("Enter a string:");
+const input = prompt("Enter a string:")
 
-if (input !== null) {
-    const result = string(input)
-    document.write (`<p>${result}</p>`)
-}
+const result = string(input)
+document.write (result)
+
